@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Assignment
+Code challenge:
+Create a react application (use CRA) that you can use to search peoples' estimated age based on their name. The search input
+should support a comma separated list of names. Use https://agify.io/ to fetch the results,
+there's no need for any authentication. 
+The layout should consist of 2 tabs: one for the search and one for the results. 
+The results should be a list of the results with the names sorted alphabetically vertically, i.e.:
+Annie: 36
+Mary: 23
+Olaf: 77
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Example layout:
+----------------------
+| *Search* | Results |
+---------------------------------------
+|                                     |
+|                                     |
+|          Seach view                 |
+|                                     |
+|                                     |
+|                                     |
+|                                     |
+|                                     |
 
-In the project directory, you can run:
+----------------------
+| Search | *Results* |
+---------------------------------------
+|                                     |
+|          Results view               |
+|    Annie: 36                        |
+|    Mary: 23                         |
+|    Olaf: 77                         |
+|                                     |
+|                                     |
+|                                     |
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Some rules:
+* Read the assignment and these rules carefully
+* Use max 2 hours for this. Stop and send whatever you have completed at this point. This is a hard deadline.
+* Use whatever UI library you prefer (react-bootstrap, material-ui, styled-components, custom ui etc.)
+* Split the search and result display into their own components: <Search> and <Results>
+* Use react functional components only
+* Highly recommended: Use react context api to store & read the results. Where you fetch the data is up to you
 
-### `npm test`
+Evaluation:
+1. Functionality
+2. Following specifications
+3. Code style
+4. Styling - if using 3rd party ui libs like material-ui there's no need to customize their look
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+When returning the code please write a few words about the time spent. If you e.g. spent most of
+the time styling the page or solving a certain issue. 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# My comments:
+Most of my time went trying to set up React Router and styling with React Bootstrap. Reason is that I haven't use them that much.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Also I did not use useContext hook, because I'm not familiar with it and didn't have time to read the docs while doing the challenge :)
